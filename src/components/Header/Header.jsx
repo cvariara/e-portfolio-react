@@ -38,7 +38,7 @@ const Header = () => {
         <a href="https://www.github.com/cvariara/" target="_blank">
           <GitHubIcon sx={{ fontSize: 30, color: "rgb(30, 136, 30)" }} />
         </a>
-        <a href="/" target="_blank">
+        <a href="/misc/Christopher_Variara_Resume.pdf" target="_blank">
           <FileText size={30} color="rgb(30, 136, 30)" />
         </a>
       </div>
