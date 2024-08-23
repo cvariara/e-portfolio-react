@@ -1,0 +1,97 @@
+@import "../../responsive.scss";
+
+$primary-color: rgb(30, 136, 30);
+
+.contact {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    color: $primary-color;
+    font-size: 5rem;
+
+    @include md {
+      font-size: 3rem;
+    }
+
+    @include sm {
+      font-size: 2.5rem;
+    }
+  }
+
+  .sub-title {
+    margin-bottom: 40px;
+    font-size: 3rem;
+
+    @include md {
+      font-size: 2.5rem;
+    }
+
+    @include sm {
+      font-size: 1.5rem;
+    }
+  }
+
+  form {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: 25px;
+
+    .input-box {
+      margin-top: 20px;
+
+      .field {
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #ddd;
+        outline: none;
+        border-radius: 6px;
+        padding: 15px;
+        font-size: 16px;
+        color: #333;
+        margin-top: 8px;
+      }
+
+      .field.mess {
+        height: 200px;
+        resize: none;
+      }
+
+      .field:focus {
+        border-color: $primary-color;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 55px;
+      background: $primary-color;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 500;
+      margin-top: 25px;
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background: rgb(25, 110, 25);
+    }
+  }
+}

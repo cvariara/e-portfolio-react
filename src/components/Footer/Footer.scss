@@ -1,0 +1,59 @@
+@import "../../responsive.scss";
+
+$primary-color: rgb(30, 136, 30);
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  color: white;
+
+  img {
+    width: 65px;
+    height: auto;
+  }
+
+  .links {
+    display: flex;
+    gap: 32px;
+
+    .link {
+      position: relative;
+      font-size: 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: $primary-color;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
