@@ -44,6 +44,10 @@ $primary-color: rgb(30, 136, 30);
   justify-content: center;
   gap: 32px;
 
+  @include sm {
+    padding: 0 2rem;
+  }
+
   .title {
     display: inline-block;
 

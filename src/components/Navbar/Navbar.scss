@@ -23,6 +23,10 @@ nav {
   z-index: 50;
   background-color: rgb(225, 225, 225);
 
+  @include sm {
+    padding: 0 2rem;
+  }
+
   .info {
     display: flex;
     justify-content: space-between;
