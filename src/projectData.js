@@ -143,6 +143,11 @@ export const daTech = [
     img: "/languages/sql.png",
   },
   {
+    id: 2,
+    language: "R",
+    img: "/languages/r.png",
+  },
+  {
     id: 3,
     language: "Tableau",
     img: "/languages/tableau.png",
